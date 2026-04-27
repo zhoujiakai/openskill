@@ -4,16 +4,7 @@
 
 ## 安装
 
-将需要的 Skill 目录复制到 `~/.claude/skills/` 下即可：
-
-```bash
-cp -r zjk-kanban ~/.claude/skills/
-cp -r zjk-mastery ~/.claude/skills/
-cp -r zjk-offer ~/.claude/skills/
-cp -r zjk-openpaper ~/.claude/skills/
-```
-
-安装后在 Claude Code 对话中触发关键词即可使用，无需额外配置。
+把这个仓库链接发给 Claude Code，在 Claude Code 中说「帮我安装这个仓库里的 Skill」即可。安装后触发关键词就能使用。
 
 ## Skills
 
@@ -86,17 +77,28 @@ cp -r zjk-openpaper ~/.claude/skills/
 
 **怎么触发：** 直接发一份 JD，或提到「求职」「面试准备」「模拟面试」「简历定制」等关键词。
 
-## Skill 之间的联动
+## Skill 联动
+
+四个 Skill 可以单独使用，也可以组合成一个完整的工作流。以「求职」为例：
 
 ```
-zjk-openpaper（知识库管理）
-    │
-    └── 查到想学的主题 → 用 zjk-mastery 开始深入学习
-                         │
-                         └── 面试需要补知识 → zjk-offer 阶段 4-5 输出学习清单
-                                              → 用 zjk-mastery 逐个学完回到 offer 流程
+1. zjk-kanban
+   搭建个人任务看板，设定「拿到 Offer」为聚焦目标，
+   所有求职相关任务在看板中统一管理。
+
+2. zjk-offer
+   收到 JD 后启动求职流程，逐步推进投递分析 → 简历定制 → 多轮面试准备。
+   过程中产出的任务和进度，回写到看板中跟踪。
+
+3. zjk-mastery
+   面试准备阶段会识别出需要补强的技术主题，
+   用 zjk-mastery 逐个深入学习（AI 笔记 → 互动问答 → A4 默写）。
+   学完后回到 offer 流程继续推进。
+
+4. zjk-openpaper
+   学习过程中产生的笔记、题库、掌握度报告，
+   全部沉淀在 openpaper 知识库中统一管理。
+   后续可随时回顾、回测，或浏览知识库全貌。
 ```
 
-- `zjk-openpaper` 发现想学的主题后，引导到 `zjk-mastery` 开始学习
-- `zjk-offer` 在技术面试阶段会输出考点清单，用 `zjk-mastery` 系统学习后回到求职流程
-- `zjk-kanban` 独立使用，管理日常任务和聚焦目标
+每个 Skill 都是独立的，你可以只用其中一个，也可以按需组合。

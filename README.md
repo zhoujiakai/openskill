@@ -23,6 +23,8 @@
 
 **注意：** 本 Skill 只负责浏览和管理，不负责学习流程。开始学习某个主题需要用下面的 zjk-mastery。
 
+**实际效果：** 参见 [openpaper 仓库](https://github.com/zhoujiakai/openpaper)。
+
 ---
 
 ### zjk-kanban — 任务看板
@@ -55,6 +57,8 @@
 **适用范围：** 论文、技术博客、教程、技术文档。不支持非技术类书籍。
 
 **怎么触发：** 提到「我要学」「帮我学」「学习计划」「知识精通」等关键词。
+
+**实际效果：** 参考 [openpaper 仓库 Transformer 主题](https://github.com/zhoujiakai/openpaper/tree/main/closed/ai-transformer)，完成三阶段后产出 4 个文件：`ai-notes.md`（AI 笔记）、`progress.md`（学习进度）、`quiz.md`（模拟题库）、`mastery-report.md`（掌握度报告）。
 
 ---
 

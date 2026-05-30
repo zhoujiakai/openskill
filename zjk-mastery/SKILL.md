@@ -69,7 +69,7 @@ description: >
 
 模板见 [references/output-templates.md](references/output-templates.md)。
 
-保存到 `open/<主题目录>/<主题名>-ai-notes.md`。
+保存到 `open/<主题目录>/ai-notes.md`。
 
 #### 写作红线（每条必须过）
 
@@ -122,7 +122,7 @@ description: >
 
 在 AI 笔记基础上，用用户自己的理解重新组织（不是抄 AI 笔记）。模板见 [references/output-templates.md](references/output-templates.md)。
 
-保存到 `open/<主题目录>/<主题名>-notes.md`。
+保存到 `open/<主题目录>/notes.md`。
 
 ### 2.3 模拟题测试
 
@@ -130,7 +130,7 @@ description: >
 
 评分：✅ 完全正确 / ⚠️ 部分正确+补充 / ❌ 不正确+回顾知识点
 
-题库保存到 `open/<主题目录>/<主题名>-quiz.md`，结构见 [references/output-templates.md](references/output-templates.md)。
+题库保存到 `open/<主题目录>/quiz.md`，结构见 [references/output-templates.md](references/output-templates.md)。
 
 ## 阶段 3：知识检验
 
@@ -169,18 +169,18 @@ description: >
 
 ```
 open/<主题目录>/
-├── <主题名>-ai-notes.md      # AI 结构化笔记
-├── <主题名>-notes.md          # 个人笔记
-├── <主题名>-quiz.md           # 题库 + 测试记录
-├── <主题名>-progress.md       # 学习进度（中途保存）
+├── ai-notes.md      # AI 结构化笔记
+├── notes.md          # 个人笔记
+├── quiz.md           # 题库 + 测试记录
+├── progress.md       # 学习进度（中途保存）
 └── <原始材料>                 # PDF、翻译等
 ```
 
 ## 启动检查清单
 
 1. 确认学习主题和目标
-2. 检查历史进度文件（`-progress.md`）
-3. 检查待回测题库（`-quiz.md` 到期测试）
+2. 检查历史进度文件（`progress.md`）
+3. 检查待回测题库（`quiz.md` 到期测试）
 4. 如有进度，询问：继续 / 重新开始 / 回测
 5. 进入对应阶段
 

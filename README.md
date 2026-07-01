@@ -58,7 +58,7 @@
 
 **怎么触发：** 提到「我要学」「帮我学」「学习计划」「知识精通」等关键词。
 
-**实际效果：** 参考 [openpaper 仓库 Transformer 主题](https://github.com/zhoujiakai/openpaper/tree/main/closed/ai-transformer)，完成三阶段后产出 4 个文件：`ai-notes.md`（AI 笔记）、`progress.md`（学习进度）、`quiz.md`（模拟题库）、`mastery-report.md`（掌握度报告）。
+**实际效果：** 参考 [openpaper 仓库](https://github.com/zhoujiakai/openpaper)，完成三阶段后产出 4 个文件：`ai-notes.md`（AI 笔记）、`progress.md`（学习进度）、`quiz.md`（模拟题库）、`mastery-report.md`（掌握度报告）。
 
 ---
 
